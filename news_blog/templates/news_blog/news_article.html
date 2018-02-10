@@ -1,0 +1,19 @@
+{% extends "news_blog/base.html" %}
+
+{% block title %}IT'S A M A Z I N G{{article.id}}{% endblock %}
+
+{% block content %}
+   <div class="row">
+       <div class="col-sm">
+           <h3>{{ article.title }}</h3>
+           <p>{{ article.text }}</p>
+
+           {% for comm in comment %}
+           <p>{{ comm.author }}</p>
+           <p>{{ comm.text }}</p>
+            {% endfor %}
+       </div>
+   </div>
+{% endblock %}
+
+
