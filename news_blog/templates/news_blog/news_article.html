@@ -3,10 +3,20 @@
 {% block title %}IT'S A M A Z I N G{{article.id}}{% endblock %}
 
 {% block content %}
-   <div class="row">
+  <div class="row">
        <div class="col-sm">
            <h3>{{ article.title }}</h3>
+           <small>
+               <a class="btn btn-default" href="{% url 'edit' article_id=article.id %}">
+                   Edit
+               </a>
+           </small>
+           <h4>{{ article.author.name }}</h4>
            <p>{{ article.text }}</p>
+    </div>
+   </div>
+ <div class="row">
+       <div class="col-sm">
 
            {% for comm in comment %}
            <p>{{ comm.author }}</p>
