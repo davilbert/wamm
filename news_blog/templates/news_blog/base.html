@@ -3,38 +3,227 @@
 
 <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <title>K I S I K</title>
-</head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link href="carousel.css" rel="stylesheet">
 
-<body background="https://cdn.wallpapersafari.com/60/26/CYsx07.jpg">
+
+    <style>
+   body {
+    margin: 10px 20%;
+   }
+   .row {
+    margin: 20%;
+
+   }
+   .col-lg-4 {
+    margin: 20%
+
+   }
+    .nav-item active{
+    margin: 100px 20%
+
+   }
+
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body background="https://upload.wikimedia.org/wikipedia/commons/6/66/Rnacap_1av6.png">
+   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
- <a class="navbar-brand" href="#">I <3 IT</a>
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ <a class="navbar-brand" href="#">I <3 BIOLOGY</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
  </button>
- <div class="collapse navbar-collapse" id="navbarNav">
-   <ul class="navbar-nav">
-       <li class="nav-item">
+ <div class="collapse navbar-collapse" id="navbarCollapse">
+   <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
        <a class="nav-link" href={% url 'author' %}>U will never know smth about me</a>
+
      </li>
+
      <li class="nav-item">
        <a class="nav-link" href={% url 'index' %}>i n t e r e s t i n g</a>
    </ul>
+
  </div>
+
 </nav>
 
-<main role="main" class="container">
+</header>
+
+<main role="main">
+     <p>The workshop intends to present the state-of-the-art of the computational tools for interpreting at the molecular level the effects that genome variations induce in the cell system, contributing to fill the knowledge gap between genotype and phenotype.
+
+NGS techniques allow detection of the differences in genetic sequences and in gene expression that can be associated to different phenotypes, and statistical methods can estimate a significance level for each association. However, the exploitation of genetic association data requires elucidation of how variations affect the structure of macromolecules and their interaction patterns and how biological processes and pathways are hampered. Proteins, their stability and their relationships in interactomes will be the central topic. Furthermore, a particular regard will be given to the regulation at the transcriptional and translational levels, as derived from epigenomic and ribosome profiling data.
+
+Computational tools are absolutely necessary to perform the analysis of massive amounts of biomedical data and modern techniques for database integration, non parametric statistics, machine-learning and in particular deep-learning approaches, can have a huge impact in the field. The exploitation of data in the applicative domains, and in particular in translational and stratified medicine, strongly rely on the availability of computational methods able to extract, elaborate and generalise biologically relevant information
+
+The workshop aims at presenting the state-of-the-art of computational methods for genome interpretation and collects expert scientists from both experimental biomedicine and computational biology. The mixing of competences is fundamental for generating significant advancements, and the proposed workshop .
+
+The format of the workshop allows extensive interaction among students and lecturers, and offers to young researchers the possibility of presenting their work at poster sessions and with short selected talks. </p>
     <h1>{% block title %}It's fuckin biology, baby{% endblock %}</h1>
     {% block content %}
     {% endblock %}
-</main>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="   ">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h2>Not from school</h2>
+                <p>Well, now i'd like to tell you smth new info about sCienCE</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="   ">
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>U can find some interesting, let's go</h2>
+                <p>Check all articles</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="   ">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>Also u can make comments with your usefull opinion</p>
+              </div>
+            </div>
+          </div>
+	 <div class="carousel-item">
+            <img class="fourth-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="   ">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>One more nice title 4 u</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="150" height="150">
+            <h2>Past</h2>
+            <p>Do u know history of bio and it?</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="150" height="150">
+            <h2>Nowadays</h2>
+            <p>What about modern life?</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="150" height="150">
+            <h2>Future</h2>
+            <p>Some predictions</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Jojojoj &raquo;</a></p>
+             </div>
+           <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="150" height="150">
+            <h2>Kotoktuty</h2>
+            <p>Somemore  predictions</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+               </div>
+          </div><!-- /.col-lg-4 -->
+
+ <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Base knowlages<span class="text-muted">It'll improve your mind.</span></h2>
+            <p class="lead">Read this (un)helpfull guide</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/300x300/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">About scientists<span class="text-muted">See for yourself(probably in the future)</span></h2>
+            <p class="lead">Only Darwin?</p>
+          </div>
+          <div class="col-md-5 ">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/300x300/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Cool<span class="text-muted">Kiss U</span></h2>
+            <p class="lead">DEADLINE 10.3.18 </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/300x300/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
 
 
+
+<!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+      </footer>
+    </main>
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
 
 </body>
 
