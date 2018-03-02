@@ -71,3 +71,8 @@ def edit_article(request, article_id):
    return render(request, 'news_blog/edit_article.html', {'form': form})
 
 
+def past_time(request):
+    return render(request, 'news_blog/past_time.html')
+
+def now_life(request):
+    return render(request, 'news_blog/now_life.html')
