@@ -5,6 +5,27 @@
 {% block content %}
     {% if articles %}
         {% for article in articles %}
+<style>
+
+    body {
+      background-image:"https://upload.wikimedia.org/wikipedia/commons/6/66/Rnacap_1av6.png";
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+}
+.container {
+ background-image:"https://upload.wikimedia.org/wikipedia/commons/6/66/Rnacap_1av6.png";
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+
+
+}
+.row
+{
+background-color: rgba(255, 255, 255, 0.85)
+}
+
+
+  </style>
             <div class="row">
                 <div class="col-sm">
                     <h3><a href={% url 'article' article_id=article.id %}>{{ article.title}}</a></h3>
