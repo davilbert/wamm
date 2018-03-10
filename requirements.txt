@@ -1,0 +1,9 @@
+dj-database-url==0.5.0
+Django==2.0.2
+gunicorn==19.7.1
+numpy==1.14.0
+psycopg2-binary==2.7.4
+PyOpenGL==3.1.0
+PyQt5==5.10.1
+pytz==2017.3
+sip==4.19.8

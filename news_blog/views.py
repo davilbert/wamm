@@ -76,3 +76,6 @@ def past_time(request):
 
 def now_life(request):
     return render(request, 'news_blog/now_life.html')
+
+def go_g(request):
+    return render(request, 'news_blog/gog.html')

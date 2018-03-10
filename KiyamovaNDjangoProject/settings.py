@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,12 +20,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'z6=5rpy8@cqi9*21u)q0pn-!9y#niss4v@-gep94dsd^x$f6nt'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'z6=5rpy8@cqi9*21u)q0pn-!9y#niss4v@-gep94dsd^x$f6nt'
+)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nell-blog.herokuapp.com']
 
 
 # Application definition
@@ -81,6 +83,10 @@ DATABASES = {
     }
 }
 
+# Heroku: Взять конфигурацию БД из $DATABASE_URL.
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

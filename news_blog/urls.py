@@ -8,6 +8,7 @@ urlpatterns = [
     path('<int:article_id>/edit', views.edit_article, name='edit'),
     path('past/',views.past_time, name='past'),
     path('now/', views.now_life, name='now'),
+    path('gog/', views.go_g, name='gog')
 ]
 
 

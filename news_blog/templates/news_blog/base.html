@@ -29,6 +29,7 @@
 .col-lg-4
 {
 background-color: rgba(255, 255, 255, 0.85)
+
 }
 
 
@@ -57,17 +58,22 @@ background-color: rgba(255, 255, 255, 0.85)
  <div class="collapse navbar-collapse" id="navbarCollapse">
    <ul class="navbar-nav mr-auto">
        <li class="nav-item ">
-           <a class="nav-link" href={% url 'author' %}><font face="Bookman Old Style">Архив</font></a>
+           <a class="nav-link" href={% url 'author' %}><font face="Bookman Old Style">История</font></a>
 
      </li>
         <li class="nav-item ">
-            <a class="nav-link" href="#"><font face="Bookman Old Style">Новости</font></a>
+            <a class="nav-link" href={% url 'past' %}><font face="Bookman Old Style">Профессия</font></a>
 
      </li>
 
 
      <li class="nav-item">
-         <a class="nav-link" href={% url 'now' %}><font face="Bookman Old Style">Интересное</font></a>
+         <a class="nav-link" href={% url 'gog' %}><font face="Bookman Old Style">Интересное</font></a>
+       </li>
+        <li class="nav-item ">
+            <a class="nav-link" href={% url 'now' %}><font face="Bookman Old Style">Секвенирование</font></a>
+
+
    </ul>
 
  </div>

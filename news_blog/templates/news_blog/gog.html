@@ -1,0 +1,46 @@
+{% extends "news_blog/base.html" %}
+
+{% block title %}<strong><font color="grey" face="Bookman Old Style">Интересное</font></strong>{{article.id}}{% endblock %}
+
+{% block content %}
+<style>
+
+.col-lg-4{
+
+border-radius: 20px;
+}
+
+
+</style>
+
+     <div class="row" id="idk">
+     <div class="col-lg-4">
+            <img class="rounded-circle" src="https://cdn3.iconfinder.com/data/icons/business-office-and-internet-1/512/28-512.png" alt="Generic placeholder image" width="250" height="250">
+              <h2><strong><font color="grey" face="Bookman Old Style">Науки</font></strong></h2>
+            <p><font color="grey" face="Bookman Old Style">
+                В науке в каждый момент времени существует одно или несколько направлений, которые являются системообразующими.Это направление активно развивают
+                университеты и академии, а также различные компании. Эта наука сейчас играет такую же роль, какую в свое время играли и космические, и ядерные проекты.
+                В этой области трудится множество математиков, программистов, биологов, физиков, химиков. Будет ли это направление развиваться дальше?</font></p>
+                <p><a class="btn btn-secondary" href="#" role="button"><font face="Bookman Old Style">Читать дальше &raquo;</font></a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://im0-tub-ru.yandex.net/i?id=83e71a53d50986e5015b762fd0ec5000&n=13" alt="Generic placeholder image" width="250" height="250">
+              <h2><strong><font color="grey" face="Bookman Old Style">Ученые</font></strong></h2>
+            <p><font color="grey" face="Bookman Old Style">Грамотный биоинформатик должен иметь разностороннее образование. Он должен хорошо знать биологию.
+                Кроме того, он должен владеть многими методами математики: статистикой, теорией вероятностей, вычислительной математикой, теорией алгоритмов.
+                Надо знать физику и химию — чтобы не делать глупостей. Необходимо знать английский язык — чтобы читать научную литературу.
+                Надо постоянно интересоваться новыми результатами как в биоинформатике, так и в биологии в целом..</font></p>
+              <p><a class="btn btn-secondary" href="#" role="button"><font face="Bookman Old Style">Читать дальше &raquo;</font></a></p>
+             </div>
+           <div class="col-lg-4">
+            <img class="rounded-circle" src="https://rydm.pro/images/002-screen.png" alt="Generic placeholder image" width="250" height="250">
+               <h2><strong><font color="grey" face="Bookman Old Style">Проблемы</font></strong></h2>
+            <p><font color="grey" face="Bookman Old Style">С возрастанием количества данных уже давно стало невозможным вручную анализировать последовательности.
+                В наши дни для поиска по геномам тысяч организмов, состоящих из миллиардов пар нуклеотидов используются компьютерные программы. Программы могут
+                однозначносопоставить ("выравнять") похожие последовательности ДНК в геномах разных видов; часто такие последовательности несут сходные функции,
+                а различия возникают в результате мелкихмутаций, таких какзамены отдельных нуклеотидов,вставки нуклеотидов, и их "выпадения" (делеции). </font></p>
+               <p><a class="btn btn-secondary" href="#" role="button"><font face="Bookman Old Style">Читать дальше &raquo;</font></a></p>
+               </div>
+     </div>
+   </div>
+{% endblock %}
