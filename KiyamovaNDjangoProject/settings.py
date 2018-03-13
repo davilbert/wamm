@@ -25,9 +25,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'z6=5rpy8@cqi9*21u)q0pn-!9y#nis
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['nell-blog.herokuapp.com']
+ALLOWED_HOSTS =  ['127.0.0.1']##['127.0.0.1'] #['nell-blog.herokuapp.com']
 
 
 # Application definition
