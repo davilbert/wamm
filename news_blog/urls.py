@@ -9,7 +9,8 @@ urlpatterns = [
     path('past/',views.past_time, name='past'),
     path('now/', views.now_life, name='now'),
     path('gog/', views.go_g, name='gog'),
-    path('past2/', views.past, name='p2')
+    path('past2/', views.past, name='p2'),
+    path('past2(2)/', views.past2, name='p22')
 ]
 
 

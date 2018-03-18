@@ -82,3 +82,6 @@ def go_g(request):
 
 def past(request):
     return render(request, 'news_blog/past2.html')
+
+def past2(request):
+    return render(request, 'news_blog/past2(2).html')

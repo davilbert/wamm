@@ -1,6 +1,6 @@
 {% extends "news_blog/base.html" %}
 
-{% block title %}<strong><font color="grey" face="Bookman Old Style">Интересное</font></strong>{{article.id}}{% endblock %}
+{% block title %}<strong><font color="grey" face="Bookman Old Style">Хронология</font></strong>{{article.id}}{% endblock %}
 
 {% block content %}
 
@@ -9,7 +9,7 @@
 
 .jumbotron{
 
-background-color: DimGrey
+background-color: #C0C0C0
 }
 
 
@@ -19,21 +19,34 @@ background-color: DimGrey
 
 <div class="jumbotron p-3 p-md-5 text-white rounded bg-DimGrey">
         <div class="col-md-6 px-0">
-            <h1 class="display-4 font-italic"><font face="Bookman Old Style">Title of a longer featured blog post</font></h1>
-            <p class="lead my-3"><font face="Bookman Old Style">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</font></p>
-            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold"><font face="Bookman Old Style">Continue reading...</font></a></p>
+            <h1 class="display-6 "><font face="Bookman Old Style">История развтия биологии</font></h1>
+            <p class="lead my-0"><font  size="3" face="Bookman Old Style">История биологии исследует развитие биологии — науки, изучающей фундаментальные (
+                наиболее общие) свойства и законы эволюционного развития живых существ. Предметом истории биологии являются выявление и обобщённый
+                анализ основных событий и тенденций в развитии биологического знания. </font></p>
+            <p class="lead mb-0"><a href={% url 'p22' %} class="text-white font-weight-bold"><font face="Bookman Old Style">Читать дальше >></font></a></p>
+        </div>
+      </div>
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-DimGrey">
+        <div class="col-md-6 px-0">
+            <h1 class="display-6 "><font face="Bookman Old Style">История развития информатики</font></h1>
+            <p class="lead my-0"><font size="3" face="Bookman Old Style">Информатика как наука стала развиваться с середины прошлого столетия, что связано с появлением
+                ЭВМ и начавшейся компьютерной революцией. Появление вычислительных машин в 1950-е гг. создало для информатики необходимую аппаратную поддержку,
+                т.е. благоприятную среду для ее развития как науки. </font></p>
+            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold"><font face="Bookman Old Style">Читать дальше >></font></a></p>
         </div>
       </div>
 
-           <div class="col-lg-4">
-            <img class="rounded-circle" src="https://rydm.pro/images/002-screen.png" alt="Generic placeholder image" width="250" height="250">
-               <h2><strong><font color="grey" face="Bookman Old Style">Проблемы</font></strong></h2>
-            <p><font color="grey" face="Bookman Old Style">С возрастанием количества данных уже давно стало невозможным вручную анализировать последовательности.
-                В наши дни для поиска по геномам тысяч организмов, состоящих из миллиардов пар нуклеотидов используются компьютерные программы. Программы могут
-                однозначносопоставить ("выравнять") похожие последовательности ДНК в геномах разных видов; часто такие последовательности несут сходные функции,
-                а различия возникают в результате мелкихмутаций, таких какзамены отдельных нуклеотидов,вставки нуклеотидов, и их "выпадения" (делеции). </font></p>
-               <p><a class="btn btn-secondary" href="#" role="button"><font face="Bookman Old Style">Читать дальше &raquo;</font></a></p>
-               </div>
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-DimGrey">
+        <div class="col-md-6 px-0">
+            <h1 class="display-6 "><font face="Bookman Old Style">История развития биоинформатики</font></h1>
+            <p class="lead my-0"><font size="3" face="Bookman Old Style">Во второй половине 20-го века,
+наука информатика начала широко внедряться и сотрудничать (и продолжает это и в наши дни) с другими науками: физико-математическими,
+техническими, гуманитарными и, конечно, естественными. Сейчас трудно найти такую область науки,которая бы обходилась без методов информатики.
+</font></p>
+            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold"><font face="Bookman Old Style">Читать дальше >></font></a></p>
+        </div>
+      </div>
+
 
 
 {% endblock %}

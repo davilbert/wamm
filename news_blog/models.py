@@ -23,12 +23,14 @@ class Article(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
 
 
+    def remove(self):
+        self.delete()
+
     def publish(self):
         self.published_date = timezone.now()
         self.save()
 
-    def remove(self):
-        self.delete()
+
 
     def __unicode__(self):
         return '{} {}'.format(self.title, self.created_date)
